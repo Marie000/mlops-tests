@@ -13,17 +13,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-  install:
     - name: Install dependencies
       run: make install
 
-  test:
     - name: Run lint
       run: make lint
 
     - name: Run test
       run: make test
 
-  format:
     - name: Run format
       run: make format
